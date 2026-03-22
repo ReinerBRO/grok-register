@@ -1,11 +1,27 @@
 {
+    "_comment": "Grok 账号批量注册工具配置文件",
+
     "run": {
+        "_comment": "注册轮数，0 为无限循环，可通过 --count 命令行参数覆盖",
         "count": 10
     },
+
+    "_comment_mail_provider": "邮箱提供商: 'cloudflare' (推荐，自建 CF Worker 临时邮箱) 或 'duckmail' (默认，使用 duckmail.sbs)",
+    "mail_provider": "cloudflare",
+
+    "_comment_duckmail": "DuckMail 配置 (mail_provider 为 duckmail 时生效)",
     "duckmail_api_base": "https://api.duckmail.sbs",
     "duckmail_bearer": "<your_duckmail_bearer_token>",
+
+    "_comment_cf": "Cloudflare Worker 临时邮箱配置 (基于 https://github.com/idinging/freemail 部署, mail_provider 为 cloudflare 时生效)",
+    "cf_mail_api_base": "https://your-cf-worker.example.com",
+    "cf_mail_token": "<your_cf_mail_bearer_token>",
+
+    "_comment_proxy": "proxy: 邮箱 API 请求代理 (可选); browser_proxy: 浏览器代理，无头服务器需翻墙时填写 (可选)",
     "proxy": "",
     "browser_proxy": "",
+
+    "_comment_api": "grok2api 号池推送配置: endpoint 留空则跳过推送; append 为 true 时合并线上已有 token",
     "api": {
         "endpoint": "",
         "token": "",
