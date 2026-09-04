@@ -1,3 +1,15 @@
+<p align="center">
+  <a href="https://www.ipwo.net/?ref=githubReinerBRO">
+    <img src="downloads/IPWO.png" alt="IPWO住宅代理" width="720">
+  </a>
+</p>
+
+> [IPWO住宅代理](https://www.ipwo.net/?ref=githubReinerBRO) 覆盖 195+ 地区动态住宅代理、静态住宅代理和不限量住宅代理，支持 HTTP、HTTPS 及 SOCKS5 协议，可与 Grok 等 AI 工具及自动化项目结合使用。
+>
+> 适用于浏览器自动化、AI 应用、API 访问及多地区网络环境等开发场景。支持免费测试，专属折扣码：`0205`
+
+---
+
 # Grok 账号批量注册工具
 
 基于 [DrissionPage](https://github.com/g1879/DrissionPage) 的 Grok (x.ai) 账号自动注册脚本，使用 [DuckMail](https://duckmail.sbs) 临时邮箱接收验证码，通过 Chrome 扩展修复 CDP `MouseEvent.screenX/screenY` 缺陷绕过 Cloudflare Turnstile。
